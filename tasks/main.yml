@@ -32,8 +32,8 @@
 
 - name: "Reboot when updates installed."
   win_reboot:
-    shutdown_timeout_sec: 3600
-    reboot_timeout_sec: 3600
+    shutdown_timeout_sec: 4000
+    reboot_timeout_sec: 4000
   when:
     - win_updates_result.reboot_required is defined
     - win_updates_result.reboot_required
